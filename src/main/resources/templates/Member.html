@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Group 10</title>
+</head>
+<body>
+    <div>
+        <img th:src="@{'/images/' + ${teamMember.imageName}}" th:alt="${teamMember.name}">
+    </div>
+    <div>
+        <h2 th:text="${teamMember.name}"></h2>
+        <p th:text="${teamMember.description}"></p>
+    </div>
+</body>
+</html>
